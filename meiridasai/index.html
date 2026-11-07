@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>每日大赛黑料入口-赛事爆点_幕后花絮_争议事件_深度解析</title>
+  <meta name="description" content="每日大赛黑料入口提供最新赛事争议、幕后花絮、选手爆点与深度分析，覆盖电竞、体育及综艺竞技，每日更新热门黑料与真相解读，适合关注内幕与话题的读者收藏。">
+  <meta name="keywords" content="每日大赛黑料,赛事爆点,幕后花絮,黑料入口,争议事件">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2312121a'/%3E%3Cpath d='M8 22 L16 8 L24 22 Z' fill='%23f5c542'/%3E%3Ccircle cx='16' cy='18' r='2.5' fill='%2312121a'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg-body: #0f0f14;
+      --bg-card: #1a1a22;
+      --bg-card-hover: #22222e;
+      --accent: #f5c542;
+      --accent-soft: #f5e6b0;
+      --text-primary: #f0f0f5;
+      --text-secondary: #b0b0c0;
+      --text-muted: #7a7a8a;
+      --border-light: #2a2a35;
+      --shadow-card: 0 8px 20px rgba(0,0,0,0.6);
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --radius-sm: 10px;
+      --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: var(--bg-body);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    /* ----- 导航 ----- */
+    .nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border-light);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .logo-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 1.4rem;
+      letter-spacing: -0.02em;
+    }
+    .logo-icon {
+      background: var(--accent);
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #121212;
+      font-size: 22px;
+      font-weight: 900;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+    }
+    .nav-links a {
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+    /* ----- Banner 杂志专题型 ----- */
+    .magazine-banner {
+      background: linear-gradient(145deg, #1a1a24 0%, #12121a 100%);
+      border-radius: var(--radius-lg);
+      margin: 24px 0 32px;
+      padding: 40px 36px;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .magazine-banner h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+    .magazine-banner h1 span {
+      color: var(--accent);
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 2px;
+    }
+    .banner-desc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px 40px;
+      color: var(--text-secondary);
+      font-size: 1rem;
+      max-width: 780px;
+    }
+    .banner-desc p {
+      flex: 1 1 260px;
+    }
+    .banner-search {
+      display: flex;
+      align-items: center;
+      background: #12121a;
+      border: 1px solid #2e2e3a;
+      border-radius: 60px;
+      padding: 6px 6px 6px 22px;
+      max-width: 500px;
+      margin-top: 8px;
+    }
+    .banner-search input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: var(--text-primary);
+      font-size: 0.95rem;
+    }
+    .banner-search input::placeholder {
+      color: var(--text-muted);
+    }
+    .banner-search button {
+      background: var(--accent);
+      border: none;
+      border-radius: 40px;
+      padding: 10px 24px;
+      font-weight: 600;
+      color: #121212;
+      cursor: default;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+    .banner-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 6px;
+    }
+    .banner-tags a {
+      background: #20202b;
+      padding: 6px 16px;
+      border-radius: 40px;
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      border: 1px solid #2e2e3a;
+      transition: all 0.2s;
+    }
+    .banner-tags a:hover {
+      background: var(--accent);
+      color: #121212;
+      border-color: var(--accent);
+    }
+    /* ----- 通用 section ----- */
+    .section {
+      margin: 56px 0;
+    }
+    .section-h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-h2::before {
+      content: '';
+      width: 6px;
+      height: 30px;
+      background: var(--accent);
+      border-radius: 8px;
+    }
+    /* ----- 卡片网格 ----- */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      padding: 20px 18px;
+      border: 1px solid var(--border-light);
+      transition: transform 0.2s, background 0.2s;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      background: var(--bg-card-hover);
+    }
+    .card-title {
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+      color: var(--accent-soft);
+    }
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 8px 0;
+    }
+    .card-tag {
+      background: #2b2b38;
+      color: var(--text-secondary);
+      font-size: 0.7rem;
+      padding: 3px 10px;
+      border-radius: 30px;
+      letter-spacing: 0.02em;
+    }
+    .card-desc {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin: 8px 0 14px;
+      flex: 1;
+    }
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      border-top: 1px solid #282834;
+      padding-top: 12px;
+    }
+    /* ----- 更新列表 ----- */
+    .update-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .update-item {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      background: var(--bg-card);
+      padding: 16px 20px;
+      border-radius: 60px;
+      border: 1px solid var(--border-light);
+      transition: background 0.2s;
+      flex-wrap: wrap;
+    }
+    .update-item:hover {
+      background: var(--bg-card-hover);
+    }
+    .update-time {
+      font-size: 0.8rem;
+      color: var(--accent);
+      font-weight: 600;
+      min-width: 80px;
+    }
+    .update-title {
+      font-weight: 600;
+      flex: 1;
+      font-size: 0.98rem;
+    }
+    .update-badge {
+      background: #2e2e3e;
+      padding: 4px 14px;
+      border-radius: 60px;
+      font-size: 0.7rem;
+      color: var(--text-secondary);
+    }
+    /* ----- 分类入口 ----- */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 14px;
+    }
+    .category-item {
+      background: #1a1a24;
+      border-radius: 60px;
+      padding: 14px 10px;
+      text-align: center;
+      font-weight: 500;
+      border: 1px solid #2a2a36;
+      transition: all 0.2s;
+      font-size: 0.9rem;
+    }
+    .category-item:hover {
+      background: var(--accent);
+      color: #121212;
+      border-color: var(--accent);
+    }
+    /* ----- 深度解析正文 ----- */
+    .article-body {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 32px 30px;
+      border: 1px solid var(--border-light);
+      font-size: 1rem;
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+    .article-body h3 {
+      color: var(--accent-soft);
+      font-size: 1.35rem;
+      margin: 28px 0 12px;
+      font-weight: 700;
+    }
+    .article-body h3:first-of-type {
+      margin-top: 0;
+    }
+    .article-body p {
+      margin-bottom: 18px;
+    }
+    .article-body strong {
+      color: #e8e8f0;
+    }
+    /* ----- 体验指南 ----- */
+    .guide-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      background: #16161e;
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      border-left: 6px solid var(--accent);
+    }
+    .guide-item {
+      flex: 1 1 200px;
+    }
+    .guide-item h4 {
+      color: var(--accent);
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+    }
+    .guide-item p {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+    }
+    /* ----- FAQ 卡片式 ----- */
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .faq-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      border: 1px solid var(--border-light);
+    }
+    .faq-card h4 {
+      color: var(--accent-soft);
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      display: flex;
+      gap: 8px;
+    }
+    .faq-card p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+    /* ----- 评论 ----- */
+    .comment-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .comment-item {
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      padding: 18px 22px;
+      border: 1px solid #22222d;
+    }
+    .comment-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 0.88rem;
+    }
+    .comment-name {
+      font-weight: 600;
+      color: var(--accent-soft);
+    }
+    .comment-date {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+    .comment-text {
+      font-size: 0.94rem;
+      color: var(--text-secondary);
+    }
+    /* ----- 资讯卡片 ----- */
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 22px;
+    }
+    .news-card {
+      background: #16161e;
+      border-radius: var(--radius-md);
+      padding: 20px;
+      border: 1px solid var(--border-light);
+    }
+    .news-date {
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .news-title {
+      font-weight: 700;
+      font-size: 1.08rem;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+    .news-summary {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+    }
+    /* ----- 页脚 ----- */
+    .footer {
+      border-top: 1px solid var(--border-light);
+      padding: 40px 0 30px;
+      margin-top: 60px;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+    }
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    /* 响应式 */
+    @media (max-width: 700px) {
+      .magazine-banner {
+        padding: 28px 20px;
+      }
+      .magazine-banner h1 {
+        font-size: 1.9rem;
+      }
+      .section-h2 {
+        font-size: 1.5rem;
+      }
+      .nav-links {
+        gap: 12px;
+        font-size: 0.8rem;
+      }
+      .update-item {
+        border-radius: 20px;
+        padding: 14px;
+      }
+      .article-body {
+        padding: 22px 18px;
+      }
+    }
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 16px;
+      }
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+      .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- 导航 -->
+    <nav class="nav-bar">
+      <div class="logo-badge">
+        <span class="logo-icon">⚡</span>
+        <span>黑料·入口</span>
+      </div>
+      <div class="nav-links">
+        <a href="/#hot">热门黑料</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#category">分类</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/#comments">评论</a>
+        <a href="/#news">资讯</a>
+      </div>
+    </nav>
+
+    <!-- Banner：杂志专题型 + 大标题专题型 -->
+    <header class="magazine-banner" id="top">
+      <h1><span>每日大赛黑料入口</span> · 赛场内外真相档案</h1>
+      <div class="banner-desc">
+        <p>聚焦每日大赛争议、选手爆点、幕后花絮与判罚内幕，第一时间呈现未被镜头捕捉的细节。</p>
+        <p>深度编辑团队每日追踪电竞赛事、体育竞技及综艺大赛，用冷静视角拆解热门黑料。</p>
+      </div>
+      <div class="banner-search">
+        <input type="text" placeholder="搜索选手、赛事、黑料关键词…" aria-label="搜索黑料">
+        <button>入口</button>
+      </div>
+      <div class="banner-tags">
+        <a href="/#hot">今日爆点</a>
+        <a href="/#latest">赛程黑料</a>
+        <a href="/#deep">争议判罚</a>
+        <a href="/#category">电竞内幕</a>
+        <a href="/#category">体育花絮</a>
+        <a href="/#category">综艺剧本</a>
+        <a href="/#news">选手动态</a>
+        <a href="/#faq">常见问题</a>
+      </div>
+    </header>
+
+    <!-- 热门推荐 -->
+    <section class="section" id="hot">
+      <h2 class="section-h2">热门黑料·今日焦点</h2>
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-title">KPL 季后赛语音泄露事件</div>
+          <div class="card-tags"><span class="card-tag">电竞</span><span class="card-tag">语音黑料</span><span class="card-tag">队内矛盾</span></div>
+          <p class="card-desc">疑似战队内部争吵录音流出，涉及战术分歧与选手轮换，联盟已介入调查。</p>
+          <div class="card-meta"><span>⚡ 热度 9.8w</span><span>更新于 2 小时前</span></div>
+        </article>
+        <article class="card">
+          <div class="card-title">城市运动会裁判打分争议</div>
+          <div class="card-tags"><span class="card-tag">体育</span><span class="card-tag">裁判黑哨</span><span class="card-tag">申诉</span></div>
+          <p class="card-desc">体操项目决赛打分被质疑压分，多支队伍联合申诉，组委会承诺公开录像。</p>
+          <div class="card-meta"><span>⚡ 热度 7.2w</span><span>3 小时前</span></div>
+        </article>
+        <article class="card">
+          <div class="card-title">《极限挑战营》剧本痕迹明显</div>
+          <div class="card-tags"><span class="card-tag">综艺</span><span class="card-tag">剧本争议</span><span class="card-tag">剪辑</span></div>
+          <p class="card-desc">网友逐帧分析发现嘉宾反应与台本高度吻合，节目组暂未回应。</p>
+          <div class="card-meta"><span>⚡ 热度 6.5w</span><span>5 小时前</span></div>
+        </article>
+        <article class="card">
+          <div class="card-title">LPL 选手排位挂机被罚</div>
+          <div class="card-tags"><span class="card-tag">电竞</span><span class="card-tag">职业态度</span><span class="card-tag">处罚公告</span></div>
+          <p class="card-desc">某知名中单在韩服排位中消极游戏，俱乐部开出队内警告并罚款。</p>
+          <div class="card-meta"><span>⚡ 热度 5.9w</span><span>昨天</span></div>
+        </article>
+        <article class="card">
+          <div class="card-title">马拉松赛事补给短缺风波</div>
+          <div class="card-tags"><span class="card-tag">体育</span><span class="card-tag">组织失误</span><span class="card-tag">跑者吐槽</span></div>
+          <p class="card-desc">多名跑者反映后半程缺水缺盐，组委会致歉并承诺改进补给方案。</p>
+          <div class="card-meta"><span>⚡ 热度 4.3w</span><span>昨天</span></div>
+        </article>
+        <article class="card">
+          <div class="card-title">说唱大赛选手歌词抄袭争议</div>
+          <div class="card-tags"><span class="card-tag">综艺</span><span class="card-tag">抄袭</span><span class="card-tag">原创</span></div>
+          <p class="card-desc">选手作品被指与地下 rapper 旧作高度相似，节目组启动原创审核。</p>
+          <div class="card-meta"><span>⚡ 热度 4.1w</span><span>2 天前</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 最新更新 -->
+    <section class="section" id="latest">
+      <h2 class="section-h2">最新黑料更新·实时追踪</h2>
+      <div class="update-list">
+        <div class="update-item"><span class="update-time">2026-11-07 14:20</span><span class="update-title">「暗区突围」邀请赛决赛语音曝光，疑似报点作弊</span><span class="update-badge">新</span></div>
+        <div class="update-item"><span class="update-time">2026-11-07 12:05</span><span class="update-title">全国街舞大赛 8 强选手退赛声明：直指评委不公</span><span class="update-badge">热</span></div>
+        <div class="update-item"><span class="update-time">2026-11-07 10:40</span><span class="update-title">CBA 常规赛裁判报告出炉，两次关键漏判引热议</span><span class="update-badge">争议</span></div>
+        <div class="update-item"><span class="update-time">2026-11-06 22:15</span><span class="update-title">《超脑少年》节目组回应“内定冠军”传闻，称纯属谣言</span><span class="update-badge">回应</span></div>
+        <div class="update-item"><span class="update-time">2026-11-06 19:30</span><span class="update-title">DOTA2 国际邀请赛中国区预选赛出现代打疑云</span><span class="update-badge">调查中</span></div>
+        <div class="update-item"><span class="update-time">2026-11-06 16:10</span><span class="update-title">城市足球联赛球迷冲突事件，足协开出重磅罚单</span><span class="update-badge">罚单</span></div>
+        <div class="update-item"><span class="update-time">2026-11-06 11:55</span><span class="update-title">《中国新说唱》选手私生活黑料被扒，本人暂未回应</span><span class="update-badge">新</span></div>
+        <div class="update-item"><span class="update-time">2026-11-05 20:00</span><span class="update-title">英雄联盟手游全国大赛惊现“演员”局，官方封禁 12 个账号</span><span class="update-badge">封禁</span></div>
+      </div>
+    </section>
+
+    <!-- 分类入口 -->
+    <section class="section" id="category">
+      <h2 class="section-h2">黑料分类·快速入口</h2>
+      <div class="category-grid">
+        <a href="/#hot" class="category-item">电竞黑料</a>
+        <a href="/#hot" class="category-item">体育争议</a>
+        <a href="/#hot" class="category-item">综艺剧本</a>
+        <a href="/#hot" class="category-item">裁判内幕</a>
+        <a href="/#hot" class="category-item">选手花絮</a>
+        <a href="/#hot" class="category-item">赛事组织</a>
+        <a href="/#hot" class="category-item">粉丝爆料</a>
+        <a href="/#hot" class="category-item">处罚公告</a>
+      </div>
+    </section>
+
+    <!-- 深度解析正文 -->
+    <section class="section" id="deep">
+      <h2 class="section-h2">深度解析·黑料背后的逻辑</h2>
+      <div class="article-body">
+        <p><strong>每日大赛黑料入口</strong>并非单纯聚合八卦，而是试图还原竞技赛场上那些被忽略的侧面。无论是电竞赛事的语音泄露、体育赛场的判罚争议，还是综艺大赛的剧本疑云，背后往往交织着竞技压力、商业利益与人性博弈。读者搜索“每日大赛黑料入口”时，通常希望快速找到最新争议事件、了解事件脉络，并看到相对理性的分析，而非情绪化输出。本站正是基于这一需求，将散落于社交平台、论坛和视频片段中的信息进行整理与交叉验证，提供有参考价值的入口。</p>
+        <h3>一、赛事争议为何总在“黑料”中发酵？</h3>
+        <p>竞技比赛的魅力在于不确定性，但一旦结果与大众预期偏离，质疑便随之而来。裁判打分、设备故障、选手状态、场外因素……每个环节都可能成为黑料的温床。例如近期城市运动会体操打分争议，观众通过多角度视频对比发现完成分存在异常，随后多支队伍联合申诉，组委会公开录像才平息舆论。这类事件中，<strong>每日大赛黑料入口</strong>的价值在于第一时间汇总各方信源，同时标注信息可信度，避免读者被单方面说法带偏。</p>
+        <h3>二、电竞黑料的特殊性：语音与数据</h3>
+        <p>与传统体育不同，电竞赛事拥有大量可回溯的语音、录像和操作数据。这使得“黑料”往往更具实锤感，但也更容易被断章取义。例如某 KPL 战队语音中选手争论战术，被剪辑后变成“队内不和”，而完整录音显示双方随后达成一致。我们在整理此类内容时，会尽量附上完整时间线或原始出处，帮助读者判断。同时，联盟与俱乐部的处罚公告也是重要参考，如 LPL 选手排位挂机被罚事件，官方公告直接回应了粉丝关切。</p>
+        <h3>三、综艺大赛的剧本争议：观众为何执着于“真实”？</h3>
+        <p>竞技类综艺兼具娱乐与比赛属性，剧本传闻几乎伴随每一季。从《极限挑战营》到说唱大赛，观众热衷于寻找穿帮镜头、台词巧合甚至剪辑节奏异常。这背后是对“真实竞技”的渴望，也是对节目组诚信的审视。我们不会轻易下结论，但会整理双方说法，并邀请业内人士匿名解读制作流程。对于普通观众而言，<strong>每日大赛黑料入口</strong>提供的不仅是谈资，更是一种参与监督的途径。</p>
+        <h3>四、如何理性消费“黑料”？</h3>
+        <p>信息过载时代，黑料常常伴随情绪化传播。建议读者先确认信源是否为官方公告、当事人声明或完整录像，再参考多方视角。本站所有内容均标注来源，并区分“已证实”“待核实”“传闻”三级。我们也鼓励用户在评论区补充线索，但需遵守社区规则。每日大赛黑料入口希望成为理性讨论的起点，而非谣言的放大器。</p>
+      </div>
+    </section>
+
+    <!-- 体验指南 -->
+    <section class="section" id="guide">
+      <h2 class="section-h2">使用体验指南</h2>
+      <div class="guide-box">
+        <div class="guide-item"><h4>🔍 分类筛选</h4><p>按电竞、体育、综艺等标签快速定位感兴趣的黑料类型，避免信息干扰。</p></div>
+        <div class="guide-item"><h4>📱 移动端适配</h4><p>响应式设计，手机阅读同样清晰流畅，随时刷最新黑料。</p></div>
+        <div class="guide-item"><h4>⏱️ 追更提醒</h4><p>最新更新栏目按时间倒序排列，方便追踪事件进展。</p></div>
+        <div class="guide-item"><h4>🧩 关联推荐</h4><p>每篇黑料下方关联同类事件，扩展阅读路径，了解前因后果。</p></div>
+      </div>
+    </section>
+
+    <!-- FAQ 常见问题 -->
+    <section class="section" id="faq">
+      <h2 class="section-h2">常见问题·关于黑料入口</h2>
+      <div class="faq-grid">
+        <div class="faq-card"><h4>Q1：每日大赛黑料入口主要收录哪些赛事？</h4><p>覆盖电竞赛事（KPL、LPL、DOTA2 等）、传统体育（足球、篮球、田径）以及竞技类综艺（说唱、街舞、脑力大赛）。关注赛场争议、选手花絮、裁判报告和官方处罚。</p></div>
+        <div class="faq-card"><h4>Q2：这些黑料信息可靠吗？</h4><p>我们优先采用官方公告、当事人声明及完整录像作为信源，并对无法核实的信息标注“传闻”或“待核实”。建议读者交叉验证，理性判断。</p></div>
+        <div class="faq-card"><h4>Q3：如何快速找到最新的黑料？</h4><p>首页“最新更新”栏目按时间倒序排列，每一条都带有时间戳和简要描述。也可以点击导航栏“最新更新”锚点直达。</p></div>
+        <div class="faq-card"><h4>Q4：我想爆料，有什么渠道？</h4><p>页面内暂无直接投稿入口，但可以在评论区留言提供线索，或通过友情链接中的社区渠道提交。请注意保护隐私，避免传播未经证实的信息。</p></div>
+        <div class="faq-card"><h4>Q5：页面内容是否包含主观评价？</h4><p>深度解析和评论模块包含编辑观点与用户讨论，我们会区分事实与观点。新闻和更新列表则尽量保持客观。</p></div>
+        <div class="faq-card"><h4>Q6：每日大赛黑料入口适合哪些人看？</h4><p>适合电竞爱好者、体育迷、综艺观众以及对赛事幕后感兴趣的普通读者。同时也有助于媒体从业者快速获取选题线索。</p></div>
+      </div>
+    </section>
+
+    <!-- 用户评论 -->
+    <section class="section" id="comments">
+      <h2 class="section-h2">用户热评·真实声音</h2>
+      <div class="comment-list">
+        <div class="comment-item"><div class="comment-header"><span class="comment-name">电竞老油条</span><span class="comment-date">2026-11-07</span></div><div class="comment-text">语音那个事感觉还有反转，等联盟完整调查吧，现在站队太早。</div></div>
+        <div class="comment-item"><div class="comment-header"><span class="comment-name">跑者阿凯</span><span class="comment-date">2026-11-07</span></div><div class="comment-text">马拉松补给问题真的该管管了，差点中暑，组委会道歉还算及时。</div></div>
+        <div class="comment-item"><div class="comment-header"><span class="comment-name">追综小透明</span><span class="comment-date">2026-11-06</span></div><div class="comment-text">极限挑战营剧本痕迹确实重，但下饭看还行，别太较真。</div></div>
+        <div class="comment-item"><div class="comment-header"><span class="comment-name">峡谷分析师</span><span class="comment-date">2026-11-06</span></div><div class="comment-text">排位挂机被罚那个，俱乐部动作很快，希望能杀一儆百。</div></div>
+        <div class="comment-item"><div class="comment-header"><span class="comment-name">篮球老男孩</span><span class="comment-date">2026-11-06</span></div><div class="comment-text">裁判报告每次都承认漏判，但结果改不了，球员心态崩了。</div></div>
+        <div class="comment-item"><div class="comment-header"><span class="comment-name">街舞爱好者</span><span class="comment-date">2026-11-05</span></div><div class="comment-text">退赛选手勇气可嘉，但希望有实锤，别只是情绪输出。</div></div>
+        <div class="comment-item"><div class="comment-header"><span class="comment-name">数据控</span><span class="comment-date">2026-11-05</span></div><div class="comment-text">这个入口整理得挺全，省得去各个论坛扒了，希望保持更新。</div></div>
+        <div class="comment-item"><div class="comment-header"><span class="comment-name">吃瓜不吐皮</span><span class="comment-date">2026-11-04</span></div><div class="comment-text">说唱选手抄袭那个，耳朵一听就明白了，节目组审核太松。</div></div>
+        <div class="comment-item"><div class="comment-header"><span class="comment-name">足球汪</span><span class="comment-date">2026-11-04</span></div><div class="comment-text">球迷冲突罚单出了，但根本问题还是安保，希望以后改进。</div></div>
+        <div class="comment-item"><div class="comment-header"><span class="comment-name">路人甲</span><span class="comment-date">2026-11-03</span></div><div class="comment-text">有些黑料假得离谱，小编能不能先过滤一下再发。</div></div>
+        <div class="comment-item"><div class="comment-header"><span class="comment-name">追风少年</span><span class="comment-date">2026-11-03</span></div><div class="comment-text">页面设计挺舒服，深色模式对眼睛友好，分类也清晰。</div></div>
+        <div class="comment-item"><div class="comment-header"><span class="comment-name">匿名教练</span><span class="comment-date">2026-11-02</span></div><div class="comment-text">电竞代打必须严查，影响整个青训生态。</div></div>
+        <div class="comment-item"><div class="comment-header"><span class="comment-name">综艺收割机</span><span class="comment-date">2026-11-01</span></div><div class="comment-text">内定冠军那个回应太官方了，反正我不信。</div></div>
+        <div class="comment-item"><div class="comment-header"><span class="comment-name">冷静看客</span><span class="comment-date">2026-10-31</span></div><div class="comment-text">建议增加事件时间线功能，有些黑料前因后果搞不清。</div></div>
+      </div>
+    </section>
+
+    <!-- 相关资讯 -->
+    <section class="section" id="news">
+      <h2 class="section-h2">黑料资讯·延伸阅读</h2>
+      <div class="news-grid">
+        <div class="news-card"><div class="news-date">2026-11-07</div><div class="news-title">KPL 联盟公布语音泄露事件初步调查：系第三方软件截取</div><p class="news-summary">联盟安全团队确认泄露源为选手直播时未关闭的语音软件，非俱乐部内部流出，后续将加强隐私培训。</p></div>
+        <div class="news-card"><div class="news-date">2026-11-06</div><div class="news-title">城市运动会体操裁判组公开打分依据，仍遭技术代表质疑</div><p class="news-summary">裁判组出示了逐项扣分明细，但某省队技术代表认为难度分认定存在偏差，要求引入第三方复核。</p></div>
+        <div class="news-card"><div class="news-date">2026-11-06</div><div class="news-title">《极限挑战营》导演回应剧本争议：所有任务均有预案</div><p class="news-summary">导演在采访中承认部分环节存在“引导”，但否认完全按照剧本表演，呼吁观众理性看待综艺制作。</p></div>
+        <div class="news-card"><div class="news-date">2026-11-05</div><div class="news-title">LPL 官方追加处罚：挂机选手禁赛一场并罚款</div><p class="news-summary">联盟纪律委员会认定该行为违反职业选手准则，除俱乐部处罚外追加官方禁赛，强调维护排位环境。</p></div>
+        <div class="news-card"><div class="news-date">2026-11-05</div><div class="news-title">说唱大赛抄袭风波升级，原唱发文要求节目组公开道歉</div><p class="news-summary">原唱通过社交媒体表示未授权改编，要求节目组下架相关视频并赔偿，节目组称正在沟通。</p></div>
+        <div class="news-card"><div class="news-date">2026-11-04</div><div class="news-title">足协公布球迷冲突处罚结果：赛区空场两场并罚款</div><p class="news-summary">除了对涉事球迷禁赛，足协还对赛区安保提出整改要求，要求增加隔离设施与警力配置。</p></div>
+      </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>
+          <p>© 2026 每日大赛黑料入口 · 内容聚合与整理</p>
+          <p style="margin-top:8px; font-size:0.75rem;">免责声明：本页信息来源于公开渠道，仅供参考，不代表本站立场。请读者理性判断，不传播未经证实的内容。</p>
+        </div>
+        <div class="footer-links">
+          <a href="/#hot">热门黑料</a>
+          <a href="/#latest">最新更新</a>
+          <a href="/#deep">深度解析</a>
+          <a href="/#faq">FAQ</a>
+          <a href="/#news">资讯</a>
+          <a href="/#comments">评论</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+  </html>
